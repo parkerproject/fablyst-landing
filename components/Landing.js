@@ -23,8 +23,8 @@ function Landing(){
       		<div className="text-5xl font-dark font-bold">Fablyst</div>
             <p
               className="text-2xl md:text-3xl font-light leading-normal"
-            >We are building something new. </p>
-          <p className="mb-8">But dont worry, you will love it.</p>
+            >We are building something cool. </p>
+          <p className="mb-8">But don't worry, you will love it.</p>
           <div className="mt-4 flex">
             {!isSubmitted ?
             <>
