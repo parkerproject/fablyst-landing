@@ -1,6 +1,7 @@
 import useSWR from 'swr'
 import Link from 'next/link'
 import { useUser } from '../utils/auth/useUser'
+import Landing from '../components/Landing'
 
 const fetcher = (url, token) =>
   fetch(url, {
@@ -18,13 +19,16 @@ const Index = () => {
   if (!user) {
     return (
       <>
-        <p>Hi there!</p>
-        <p>
+       <Landing />
+        {/* <p>Hi there!</p>
+        <h1 style={{fontSize: '6rem'}}>FABLYST is changing.</h1> 
+        <h2>We are working on something new</h2> */}
+        {/* <p>
           You are not signed in.{' '}
           <Link href={'/auth'}>
             <a>Sign in</a>
           </Link>
-        </p>
+        </p> */}
       </>
     )
   }
